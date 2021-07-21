@@ -1,0 +1,76 @@
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+console.log(cat);
+
+
+1.Add height and weight to Fluffy
+
+Solution:
+cat.height = 2; 
+cat.weight = 4;
+
+2.Fluffy name is spelled wrongly. Update it to Fluffyy
+
+Solution: cat.name = "Fluffyy";
+
+3.List all the activities of Fluffyy’s catFriends.
+
+Solution: 
+for(var i=0; i<2; i++)
+{
+    console.log(cat.catFriends[i].activities);
+}
+
+4.Print the catFriends names.
+
+Solution: 
+for(var i=0; i<2; i++)
+{
+    console.log(cat.catFriends[i].names);
+}
+
+5.Print the total weight of catFriends
+
+Solution: 
+var totalweight = 0;
+for(var i=0; i<2; i++)
+{
+    totalweight = totalweight + cat.catFriends[i].weight;
+
+}
+console.log(totalweight);
+
+6.Print the total activities of all cats (op:6)
+
+Solution:
+console.log(cat.activities +","+ cat.catFriends[0].activities + " ," + cat.catFriends[1].activities);
+
+7.Add 2 more activities to bar & foo cats
+
+Solution:
+cat.catFriends[0].activities[0,2]="play well"; 
+cat.catFriends[0].activities[0,3]="search food";
+cat.catFriends[1].activities[0,2]="scrawl";
+cat.catFriends[1].activities[0,3]="roll";
+
+8.Update the fur color of bar
+
+Solution:
+cat.catFriends[0].furcolor = "brown";
+
+
